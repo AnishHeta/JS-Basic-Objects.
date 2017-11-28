@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+function Person(first, last, age, weight) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.weight = weight;
+}
+
+var Me = new Person("Anish", "Heta", 23, 65);
+var You = new Person("Natasha", "Ray", 23, 55);
+
+document.getElementById("demo").innerHTML =
+"Anish age is " + Me.age + "Natasha age is " + You.age; 
+</script>
+
+</body>
+</html>
