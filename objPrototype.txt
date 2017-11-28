@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+function Person(first, last, age, color) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.color = color;
+}
+Person.prototype.name = function() {
+    return this.firstName + " " + this.lastName
+};
+
+var girl = new Person("Natasha", "May", 30, "white");
+document.getElementById("demo").innerHTML =
+"Girl name is " + girl.name(); 
+</script>
+
+</body>
+</html>
